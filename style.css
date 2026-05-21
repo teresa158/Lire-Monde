@@ -77,8 +77,8 @@
 }
 
 .logo-img {
-  width: 65px;
-  height: 65px;
+  width: 50x;
+  height: 50px;
   object-fit: cover;
 }
 
@@ -88,7 +88,7 @@
 
 .logo-text {
       font-family: 'Cinzel', serif;
-      font-size: 15px;
+      font-size: 21px;
       font-weight: 700;
       letter-spacing: 0.18em;
       color: var(--cream);
@@ -98,9 +98,11 @@
 .logo-text{
   position: absolute;
   font-weight: 300;
-  bottom: 35%;
+  bottom: 28%;
   margin-left: 5px;
 }
+
+
     /* ── HERO ────────────────────────────────────────── */
     .hero {
       position: relative;
@@ -121,20 +123,19 @@
       animation: heroIn .9s cubic-bezier(.22,1,.36,1) both;
     }
 
-    .hero-eyebrow {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 22px;
+    .devider1 {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+    .content{
+      margin-left: 30px;
     }
-
-    .hero-eyebrow-line {
-      width: 36px;
-      height: 1px;
-      background: var(--gold);
-      opacity: .7;
-    }
-
+    
     .hero-eyebrow-text {
       font-family: 'Cinzel', serif;
       font-size: 10px;
@@ -146,13 +147,14 @@
 
     .hero-title {
       font-family: 'Cinzel', serif;
-      font-size: clamp(28px, 4vw, 44px);
+      font-size: 30px;
       font-weight: 600;
       line-height: 1.22;
       letter-spacing: .06em;
       text-transform: uppercase;
       color: var(--cream);
       margin-bottom: 20px;
+      margin-top:20px;
       text-shadow: 0 2px 24px rgba(0,0,0,.5);
     }
 
@@ -214,52 +216,3 @@
 
     .hero-cta:hover .hero-cta-arrow { width: 26px; }
 
-    /* ── SCROLL INDICATOR ─────────────────────────────── */
-    .scroll-hint {
-      position: absolute;
-      bottom: 36px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 3;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-      opacity: .45;
-      animation: fadeInUp 1.4s .8s both;
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translate(-50%, 12px); }
-      to   { opacity: .45; transform: translate(-50%, 0); }
-    }
-
-    .scroll-hint-line {
-      width: 1px;
-      height: 38px;
-      background: linear-gradient(to bottom, var(--gold), transparent);
-      animation: scrollPulse 2s ease-in-out infinite;
-    }
-
-    @keyframes scrollPulse {
-      0%, 100% { opacity: .5; transform: scaleY(1); }
-      50%       { opacity: 1;  transform: scaleY(1.15); }
-    }
-
-    .scroll-hint-label {
-      font-family: 'Cinzel', serif;
-      font-size: 9px;
-      letter-spacing: .25em;
-      text-transform: uppercase;
-      color: var(--gold);
-    }
-
-    /* ── DECORATIVE CORNER ────────────────────────────── */
-    .corner-deco {
-      position: absolute;
-      bottom: 0; right: 0;
-      width: 180px; height: 180px;
-      z-index: 3;
-      opacity: .15;
-      pointer-events: none;
-    }
