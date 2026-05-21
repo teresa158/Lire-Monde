@@ -1,0 +1,84 @@
+{
+  "categories": [
+    { "id": "0000", "image": "", "categorie": "PHILOSOPHIE" },
+    { "id": "0001", "image": "", "categorie": "LITTERATURE CLASSIQUE" },
+    { "id": "0002", "image": "", "categorie": "HISTORY" },
+    { "id": "0003", "image": "", "categorie": "POETRY" }
+  ],
+
+  "livres": [
+    [
+  {
+    "id": "1111",
+    "couverture": "",
+    "titre": "Madame Bovary",
+    "genre": "LITTERATURE CLASSIQUE",
+    "auteur": "Gustave Flaubert",
+    "description": "Madame Bovary est le chef-d'œuvre de Gustave Flaubert (1857), qui suit Emma Bovary, une jeune femme de province nourrie de romans romantiques, incapable de supporter la banalité de sa vie de médecin de campagne. À travers adultères, dettes et illusions brisées, le livre dénonce le romantisme naïf et l'hypocrisie bourgeoise. C'est une œuvre d'une précision cruelle, à la fois belle et désespérée.",
+  },
+  {
+    "id": "1112",
+    "couverture": "",
+    "titre": "Anna Karenina",
+    "genre": "ROMAN CLASSIQUE",
+    "auteur": "Leo Tolstoy",
+    "description": "Anna Karénine est un roman célèbre de Léon Tolstoï (1877), qui raconte l'histoire tragique d'Anna, une femme de la haute société russe, partagée entre les règles strictes de son époque et sa passion interdite pour Vronski. À travers amour, jalousie et pression sociale, le livre critique l'hypocrisie de l'aristocratie et montre les conséquences d'un choix fait contre les normes. C'est une œuvre intense, romantique et profondément humaine.",
+    "alire": "true"
+  },
+  {
+    "id": "1113",
+    "couverture": "",
+    "titre": "Wuthering Heights",
+    "genre": "ROMAN GOTHIQUE",
+    "auteur": "Emily Brontë",
+    "description": "Les Hauts de Hurlevent est le roman unique et fulgurant d'Emily Brontë (1847), qui plonge dans une passion dévorante entre Heathcliff, un orphelin mystérieux, et Catherine Earnshaw, sur fond de landes sauvages et de vengeance. Leur amour, aussi violent qu'impossible, traverse les générations et défie la mort elle-même. C'est une œuvre sombre, hantée et d'une puissance émotionnelle rare.",
+    "alire": "true"
+  },
+  {
+    "id": "1114",
+    "couverture": "",
+    "titre": "Villette",
+    "genre": "ROMAN CLASSIQUE",
+    "auteur": "Charlotte Brontë",
+    "description": "Villette est le roman le plus personnel de Charlotte Brontë (1853), qui suit Lucy Snowe, une jeune Anglaise réservée contrainte de tout reconstruire seule dans une ville étrangère. Entre solitude, répression des émotions et amour incertain, le récit explore avec une lucidité saisissante la condition féminine et la quête d'identité. C'est une œuvre introspective, mélancolique et d'une modernité surprenante.",
+    "alire": "true"
+  },
+  {
+    "id": "1115",
+    "couverture": "",
+    "titre": "Jane Eyre",
+    "genre": "ROMAN GOTHIQUE",
+    "auteur": "Charlotte Brontë",
+    "description": "Jane Eyre est un roman fondateur de Charlotte Brontë (1847), qui retrace le destin de Jane, orpheline sans fortune mais d'une dignité inébranlable, de son enfance malheureuse jusqu'à son amour tourmenté pour le mystérieux Mr. Rochester. Face aux injustices, aux secrets et aux conventions sociales, Jane refuse de sacrifier ni son indépendance ni ses valeurs. C'est une œuvre passionnante, féministe avant l'heure, et profondément émouvante.",
+    "alire": "true"
+  },
+  {
+    "id": "1116",
+    "couverture": "",
+    "titre": "Secrets and Masks",
+    "genre": "DARK ROMANCE",
+    "auteur": "Emerald Slytherin",
+    "description": "Secrets and Masks est une dark romance d'Emerald Slytherin, qui plonge dans une relation ambiguë faite de jeux de pouvoir, de mensonges savamment orchestrés et d'une attirance aussi dangereuse qu'irrésistible. Derrière chaque masque se cache une blessure, et derrière chaque secret, une vérité qui pourrait tout faire basculer. C'est une lecture addictive, intense et émotionnellement épuisante.",
+    "alire": "true"
+  },
+  {
+    "id": "1117",
+    "couverture": "",
+    "titre": "White Nights",
+    "genre": "LITTERATURE RUSSE",
+    "auteur": "Fyodor Dostoyevsky",
+    "description": "Les Nuits blanches est une nouvelle poignante de Fiodor Dostoïevski (1848), qui raconte la rencontre fugace entre un jeune homme solitaire et Nastienka, une jeune femme attendant un amour qui ne vient pas, pendant les nuits lumineuses de Saint-Pétersbourg. En quelques jours suspendus hors du temps, naît une tendresse douce-amère vouée à l'impermanence. C'est un texte court, délicat et d'une tristesse magnifique.",
+    "alire": "true"
+  },
+  {
+    "id": "1118",
+    "couverture": "",
+    "titre": "The Idiot",
+    "genre": "ROMAN PHILOSOPHIQUE",
+    "auteur": "Fyodor Dostoyevsky",
+    "description": "L'Idiot est un roman monumental de Fiodor Dostoïevski (1869), qui met en scène le prince Mychkine, homme doux et sincère revenu de Suisse après avoir soigné une épilepsie, jeté dans le tourbillon impitoyable de la société pétersbourgeoise. Sa bonté absolue, loin de le protéger, devient sa fragilité face à la cupidité, la jalousie et la folie des autres. C'est une réflexion bouleversante sur l'innocence, la beauté et l'impossibilité d'être bon dans un monde corrompu.",
+    "alire": "true"
+  }
+]
+  ]
+}

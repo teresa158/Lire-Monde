@@ -216,3 +216,11 @@
 
     .hero-cta:hover .hero-cta-arrow { width: 26px; }
 
+.pictitle{
+  display: flex;
+  width: 35%;
+  height: 220px;
+  justify-content: center;
+  display: block;
+  margin: auto;
+}
