@@ -15,6 +15,8 @@
     "genre": "LITTERATURE CLASSIQUE",
     "auteur": "Gustave Flaubert",
     "description": "Madame Bovary est le chef-d'œuvre de Gustave Flaubert (1857), qui suit Emma Bovary, une jeune femme de province nourrie de romans romantiques, incapable de supporter la banalité de sa vie de médecin de campagne. À travers adultères, dettes et illusions brisées, le livre dénonce le romantisme naïf et l'hypocrisie bourgeoise. C'est une œuvre d'une précision cruelle, à la fois belle et désespérée.",
+    "alire": "true"
+
   },
   {
     "id": "1112",
@@ -78,7 +80,61 @@
     "auteur": "Fyodor Dostoyevsky",
     "description": "L'Idiot est un roman monumental de Fiodor Dostoïevski (1869), qui met en scène le prince Mychkine, homme doux et sincère revenu de Suisse après avoir soigné une épilepsie, jeté dans le tourbillon impitoyable de la société pétersbourgeoise. Sa bonté absolue, loin de le protéger, devient sa fragilité face à la cupidité, la jalousie et la folie des autres. C'est une réflexion bouleversante sur l'innocence, la beauté et l'impossibilité d'être bon dans un monde corrompu.",
     "alire": "true"
+  },
+  {
+    "id": "1120",
+    "couverture": "",
+    "titre": "Crime and Punishment",
+    "genre": "ROMAN PSYCHOLOGIQUE",
+    "auteur": "Fyodor Dostoyevsky",
+    "description": "Crime and Punishment est un roman majeur de Fiodor Dostoïevski (1866), qui suit Raskolnikov, un jeune étudiant pauvre de Saint-Pétersbourg convaincu que certaines personnes extraordinaires peuvent échapper aux lois morales. Après avoir commis un meurtre, il sombre progressivement dans la culpabilité, la peur et la folie. À travers ce récit intense, le roman explore la conscience humaine, la justice et les limites de la morale. C'est une œuvre sombre, philosophique et profondément psychologique.",
+    "alire": "true"
+  },
+  {
+    "id": "1121",
+    "couverture": "",
+    "titre": "Pride and Prejudice",
+    "genre": "ROMAN CLASSIQUE",
+    "auteur": "Jane Austen",
+    "description": "Pride and Prejudice est un roman célèbre de Jane Austen (1813), qui raconte la relation complexe entre Elizabeth Bennet, une jeune femme vive et indépendante, et le mystérieux Mr. Darcy. Entre malentendus, orgueil et préjugés sociaux, le livre explore les attentes imposées aux femmes et les codes de la société anglaise du XIXe siècle. À travers des dialogues raffinés et une critique subtile des conventions sociales, Austen offre une œuvre élégante, romantique et intemporelle.",
+    "alire": "true"
+  },
+  {
+    "id": "1122",
+    "couverture": "",
+    "titre": "The Great Gatsby",
+    "genre": "ROMAN CLASSIQUE",
+    "auteur": "F. Scott Fitzgerald",
+    "description": "Gatsby le Magnifique est un roman emblématique de F. Scott Fitzgerald (1925), qui plonge dans l'univers doré et décadent des années folles à travers Jay Gatsby, homme mystérieux bâti sur un rêve et une obsession : reconquérir Daisy, l'amour perdu de sa jeunesse. Derrière les fêtes somptueuses et les illusions de grandeur, le roman dévoile la fragilité du rêve américain et la cruauté d'une société fondée sur les apparences. C'est une œuvre mélancolique, poétique et d'une lucidité implacable.",
+    "alire": "true"
+  },
+  {
+    "id": "1123",
+    "couverture": "",
+    "titre": "Les Misérables",
+    "genre": "ROMAN HISTORIQUE",
+    "auteur": "Victor Hugo",
+    "description": "Les Misérables est un roman monumental de Victor Hugo (1862), qui retrace le long chemin de Jean Valjean, ancien forçat brisé par la misère, vers la rédemption dans une France ravagée par les inégalités. Traqué par l'inflexible inspecteur Javert et portant le destin de la jeune Cosette, il incarne la lutte éternelle entre justice et humanité. À travers une galerie de personnages inoubliables et une fresque historique saisissante, Hugo crie sa révolte contre l'injustice sociale. C'est une œuvre titanesque, bouleversante et universelle.",
+    "alire": "true"
+  },
+  {
+    "id": "1124",
+    "couverture": "",
+    "titre": "Dracula",
+    "genre": "ROMAN GOTHIQUE",
+    "auteur": "Bram Stoker",
+    "description": "Dracula est le roman gothique fondateur de Bram Stoker (1897), qui narre l'arrivée inquiétante du comte Dracula depuis les Carpates jusqu'aux brumes de l'Angleterre victorienne. Raconté à travers journaux intimes, lettres et télégrammes, le récit installe une atmosphère de terreur progressive où le surnaturel envahit le quotidien. Derrière l'horreur, l'œuvre interroge les peurs profondes de l'époque : la sexualité, la mort, l'étranger et la perte de contrôle. C'est un classique envoûtant, magistralement construit et indémodable.",
+    "alire": "true"
+  },
+  {
+    "id": "1125",
+    "couverture": "",
+    "titre": "The Picture of Dorian Gray",
+    "genre": "ROMAN PHILOSOPHIQUE",
+    "auteur": "Oscar Wilde",
+    "description": "Le Portrait de Dorian Gray est le seul roman d'Oscar Wilde (1890), qui raconte la déchéance morale de Dorian Gray, jeune homme d'une beauté envoûtante ayant vendu son âme pour rester éternellement jeune pendant que son portrait, lui, porte le poids de ses crimes. Guidé par le cynique Lord Henry, il plonge dans une vie de plaisirs et de cruauté sans jamais en paraître marqué. À travers cette fable faustienne, Wilde interroge la vanité, l'art et la corruption de l'âme. C'est une œuvre brillante, provocatrice et d'une élégance vénéneuse.",
+    "alire": "true"
   }
 ]
-  ]
+]
 }
