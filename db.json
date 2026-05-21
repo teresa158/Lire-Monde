@@ -1,13 +1,12 @@
 {
   "categories": [
-    { "id": "0000", "image": "", "categorie": "PHILOSOPHIE" },
-    { "id": "0001", "image": "", "categorie": "LITTERATURE CLASSIQUE" },
-    { "id": "0002", "image": "", "categorie": "HISTORY" },
-    { "id": "0003", "image": "", "categorie": "POETRY" }
+    { "id": "0000", "image": "", "type": "PHILOSOPHIE" },
+    { "id": "0001", "image": "", "type": "LITTERATURE CLASSIQUE" },
+    { "id": "0002", "image": "", "type": "HISTORY" },
+    { "id": "0003", "image": "", "type": "POETRY" }
   ],
 
   "livres": [
-    [
   {
     "id": "1111",
     "couverture": "",
@@ -136,5 +135,5 @@
     "alire": "true"
   }
 ]
-]
+
 }
