@@ -47,3 +47,18 @@ function creatcategoriecard(){
     });
 
 }
+
+function creatlivrescard(){
+    state.books.forEach(book => {
+
+    let cardlv = document.createElement("div");
+    cardlv.className = "book-card";
+    cardlv.innerHTML = `
+    <img src="${book.couverture}">
+    <h3>${book.titre}</h3>
+    <p>${book.auteur}</p>
+    <span>${book.genre}</span>
+    ` 
+    novels.appendChild(cardlv);
+    })
+}
