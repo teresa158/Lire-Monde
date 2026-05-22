@@ -1,139 +1,155 @@
 {
   "categories": [
-    { "id": "0000", "image": "", "type": "PHILOSOPHIE" },
+    {
+      "id": "0000",
+      "image": "images/Busts Philosophy Aristotle - Free photo on Pixabay.jpeg",
+      "type": "PHILOSOPHIE"
+    },
     { "id": "0001", "image": "", "type": "LITTERATURE CLASSIQUE" },
     { "id": "0002", "image": "", "type": "HISTORY" },
     { "id": "0003", "image": "", "type": "POETRY" }
   ],
 
   "livres": [
-  {
-    "id": "1111",
-    "couverture": "",
-    "titre": "Madame Bovary",
-    "genre": "LITTERATURE CLASSIQUE",
-    "auteur": "Gustave Flaubert",
-    "description": "Madame Bovary est le chef-d'œuvre de Gustave Flaubert (1857), qui suit Emma Bovary, une jeune femme de province nourrie de romans romantiques, incapable de supporter la banalité de sa vie de médecin de campagne. À travers adultères, dettes et illusions brisées, le livre dénonce le romantisme naïf et l'hypocrisie bourgeoise. C'est une œuvre d'une précision cruelle, à la fois belle et désespérée.",
-    "alire": "true"
-
-  },
-  {
-    "id": "1112",
-    "couverture": "",
-    "titre": "Anna Karenina",
-    "genre": "ROMAN CLASSIQUE",
-    "auteur": "Leo Tolstoy",
-    "description": "Anna Karénine est un roman célèbre de Léon Tolstoï (1877), qui raconte l'histoire tragique d'Anna, une femme de la haute société russe, partagée entre les règles strictes de son époque et sa passion interdite pour Vronski. À travers amour, jalousie et pression sociale, le livre critique l'hypocrisie de l'aristocratie et montre les conséquences d'un choix fait contre les normes. C'est une œuvre intense, romantique et profondément humaine.",
-    "alire": "true"
-  },
-  {
-    "id": "1113",
-    "couverture": "",
-    "titre": "Wuthering Heights",
-    "genre": "ROMAN GOTHIQUE",
-    "auteur": "Emily Brontë",
-    "description": "Les Hauts de Hurlevent est le roman unique et fulgurant d'Emily Brontë (1847), qui plonge dans une passion dévorante entre Heathcliff, un orphelin mystérieux, et Catherine Earnshaw, sur fond de landes sauvages et de vengeance. Leur amour, aussi violent qu'impossible, traverse les générations et défie la mort elle-même. C'est une œuvre sombre, hantée et d'une puissance émotionnelle rare.",
-    "alire": "true"
-  },
-  {
-    "id": "1114",
-    "couverture": "",
-    "titre": "Villette",
-    "genre": "ROMAN CLASSIQUE",
-    "auteur": "Charlotte Brontë",
-    "description": "Villette est le roman le plus personnel de Charlotte Brontë (1853), qui suit Lucy Snowe, une jeune Anglaise réservée contrainte de tout reconstruire seule dans une ville étrangère. Entre solitude, répression des émotions et amour incertain, le récit explore avec une lucidité saisissante la condition féminine et la quête d'identité. C'est une œuvre introspective, mélancolique et d'une modernité surprenante.",
-    "alire": "true"
-  },
-  {
-    "id": "1115",
-    "couverture": "",
-    "titre": "Jane Eyre",
-    "genre": "ROMAN GOTHIQUE",
-    "auteur": "Charlotte Brontë",
-    "description": "Jane Eyre est un roman fondateur de Charlotte Brontë (1847), qui retrace le destin de Jane, orpheline sans fortune mais d'une dignité inébranlable, de son enfance malheureuse jusqu'à son amour tourmenté pour le mystérieux Mr. Rochester. Face aux injustices, aux secrets et aux conventions sociales, Jane refuse de sacrifier ni son indépendance ni ses valeurs. C'est une œuvre passionnante, féministe avant l'heure, et profondément émouvante.",
-    "alire": "true"
-  },
-  {
-    "id": "1116",
-    "couverture": "",
-    "titre": "Secrets and Masks",
-    "genre": "DARK ROMANCE",
-    "auteur": "Emerald Slytherin",
-    "description": "Secrets and Masks est une dark romance d'Emerald Slytherin, qui plonge dans une relation ambiguë faite de jeux de pouvoir, de mensonges savamment orchestrés et d'une attirance aussi dangereuse qu'irrésistible. Derrière chaque masque se cache une blessure, et derrière chaque secret, une vérité qui pourrait tout faire basculer. C'est une lecture addictive, intense et émotionnellement épuisante.",
-    "alire": "true"
-  },
-  {
-    "id": "1117",
-    "couverture": "",
-    "titre": "White Nights",
-    "genre": "LITTERATURE RUSSE",
-    "auteur": "Fyodor Dostoyevsky",
-    "description": "Les Nuits blanches est une nouvelle poignante de Fiodor Dostoïevski (1848), qui raconte la rencontre fugace entre un jeune homme solitaire et Nastienka, une jeune femme attendant un amour qui ne vient pas, pendant les nuits lumineuses de Saint-Pétersbourg. En quelques jours suspendus hors du temps, naît une tendresse douce-amère vouée à l'impermanence. C'est un texte court, délicat et d'une tristesse magnifique.",
-    "alire": "true"
-  },
-  {
-    "id": "1118",
-    "couverture": "",
-    "titre": "The Idiot",
-    "genre": "ROMAN PHILOSOPHIQUE",
-    "auteur": "Fyodor Dostoyevsky",
-    "description": "L'Idiot est un roman monumental de Fiodor Dostoïevski (1869), qui met en scène le prince Mychkine, homme doux et sincère revenu de Suisse après avoir soigné une épilepsie, jeté dans le tourbillon impitoyable de la société pétersbourgeoise. Sa bonté absolue, loin de le protéger, devient sa fragilité face à la cupidité, la jalousie et la folie des autres. C'est une réflexion bouleversante sur l'innocence, la beauté et l'impossibilité d'être bon dans un monde corrompu.",
-    "alire": "true"
-  },
-  {
-    "id": "1120",
-    "couverture": "",
-    "titre": "Crime and Punishment",
-    "genre": "ROMAN PSYCHOLOGIQUE",
-    "auteur": "Fyodor Dostoyevsky",
-    "description": "Crime and Punishment est un roman majeur de Fiodor Dostoïevski (1866), qui suit Raskolnikov, un jeune étudiant pauvre de Saint-Pétersbourg convaincu que certaines personnes extraordinaires peuvent échapper aux lois morales. Après avoir commis un meurtre, il sombre progressivement dans la culpabilité, la peur et la folie. À travers ce récit intense, le roman explore la conscience humaine, la justice et les limites de la morale. C'est une œuvre sombre, philosophique et profondément psychologique.",
-    "alire": "true"
-  },
-  {
-    "id": "1121",
-    "couverture": "",
-    "titre": "Pride and Prejudice",
-    "genre": "ROMAN CLASSIQUE",
-    "auteur": "Jane Austen",
-    "description": "Pride and Prejudice est un roman célèbre de Jane Austen (1813), qui raconte la relation complexe entre Elizabeth Bennet, une jeune femme vive et indépendante, et le mystérieux Mr. Darcy. Entre malentendus, orgueil et préjugés sociaux, le livre explore les attentes imposées aux femmes et les codes de la société anglaise du XIXe siècle. À travers des dialogues raffinés et une critique subtile des conventions sociales, Austen offre une œuvre élégante, romantique et intemporelle.",
-    "alire": "true"
-  },
-  {
-    "id": "1122",
-    "couverture": "",
-    "titre": "The Great Gatsby",
-    "genre": "ROMAN CLASSIQUE",
-    "auteur": "F. Scott Fitzgerald",
-    "description": "Gatsby le Magnifique est un roman emblématique de F. Scott Fitzgerald (1925), qui plonge dans l'univers doré et décadent des années folles à travers Jay Gatsby, homme mystérieux bâti sur un rêve et une obsession : reconquérir Daisy, l'amour perdu de sa jeunesse. Derrière les fêtes somptueuses et les illusions de grandeur, le roman dévoile la fragilité du rêve américain et la cruauté d'une société fondée sur les apparences. C'est une œuvre mélancolique, poétique et d'une lucidité implacable.",
-    "alire": "true"
-  },
-  {
-    "id": "1123",
-    "couverture": "",
-    "titre": "Les Misérables",
-    "genre": "ROMAN HISTORIQUE",
-    "auteur": "Victor Hugo",
-    "description": "Les Misérables est un roman monumental de Victor Hugo (1862), qui retrace le long chemin de Jean Valjean, ancien forçat brisé par la misère, vers la rédemption dans une France ravagée par les inégalités. Traqué par l'inflexible inspecteur Javert et portant le destin de la jeune Cosette, il incarne la lutte éternelle entre justice et humanité. À travers une galerie de personnages inoubliables et une fresque historique saisissante, Hugo crie sa révolte contre l'injustice sociale. C'est une œuvre titanesque, bouleversante et universelle.",
-    "alire": "true"
-  },
-  {
-    "id": "1124",
-    "couverture": "",
-    "titre": "Dracula",
-    "genre": "ROMAN GOTHIQUE",
-    "auteur": "Bram Stoker",
-    "description": "Dracula est le roman gothique fondateur de Bram Stoker (1897), qui narre l'arrivée inquiétante du comte Dracula depuis les Carpates jusqu'aux brumes de l'Angleterre victorienne. Raconté à travers journaux intimes, lettres et télégrammes, le récit installe une atmosphère de terreur progressive où le surnaturel envahit le quotidien. Derrière l'horreur, l'œuvre interroge les peurs profondes de l'époque : la sexualité, la mort, l'étranger et la perte de contrôle. C'est un classique envoûtant, magistralement construit et indémodable.",
-    "alire": "true"
-  },
-  {
-    "id": "1125",
-    "couverture": "",
-    "titre": "The Picture of Dorian Gray",
-    "genre": "ROMAN PHILOSOPHIQUE",
-    "auteur": "Oscar Wilde",
-    "description": "Le Portrait de Dorian Gray est le seul roman d'Oscar Wilde (1890), qui raconte la déchéance morale de Dorian Gray, jeune homme d'une beauté envoûtante ayant vendu son âme pour rester éternellement jeune pendant que son portrait, lui, porte le poids de ses crimes. Guidé par le cynique Lord Henry, il plonge dans une vie de plaisirs et de cruauté sans jamais en paraître marqué. À travers cette fable faustienne, Wilde interroge la vanité, l'art et la corruption de l'âme. C'est une œuvre brillante, provocatrice et d'une élégance vénéneuse.",
-    "alire": "true"
-  }
-]
-
+    {
+      "id": "1111",
+      "couverture": "",
+      "titre": "Madame Bovary",
+      "genre": "LITTERATURE CLASSIQUE",
+      "auteur": "Gustave Flaubert",
+      "description": "Madame Bovary est le chef-d'œuvre de Gustave Flaubert (1857), qui suit Emma Bovary, une jeune femme de province nourrie de romans romantiques, incapable de supporter la banalité de sa vie de médecin de campagne. À travers adultères, dettes et illusions brisées, le livre dénonce le romantisme naïf et l'hypocrisie bourgeoise. C'est une œuvre d'une précision cruelle, à la fois belle et désespérée.",
+      "alire": "true",
+      "add-btn": "images/download__29_-removebg-preview.png"
+    },
+    {
+      "id": "1112",
+      "couverture": "images/download (23).jpeg",
+      "titre": "Anna Karenina",
+      "genre": "ROMAN CLASSIQUE",
+      "auteur": "Leo Tolstoy",
+      "description": "Anna Karénine est un roman célèbre de Léon Tolstoï (1877), qui raconte l'histoire tragique d'Anna, une femme de la haute société russe, partagée entre les règles strictes de son époque et sa passion interdite pour Vronski. À travers amour, jalousie et pression sociale, le livre critique l'hypocrisie de l'aristocratie et montre les conséquences d'un choix fait contre les normes. C'est une œuvre intense, romantique et profondément humaine.",
+      "alire": "true",
+      "add-btn": "images/image-removebg-preview (2).png"
+    },
+    {
+      "id": "1113",
+      "couverture": "",
+      "titre": "Wuthering Heights",
+      "genre": "ROMAN GOTHIQUE",
+      "auteur": "Emily Brontë",
+      "description": "Les Hauts de Hurlevent est le roman unique et fulgurant d'Emily Brontë (1847), qui plonge dans une passion dévorante entre Heathcliff, un orphelin mystérieux, et Catherine Earnshaw, sur fond de landes sauvages et de vengeance. Leur amour, aussi violent qu'impossible, traverse les générations et défie la mort elle-même. C'est une œuvre sombre, hantée et d'une puissance émotionnelle rare.",
+      "alire": "true",
+      "add-btn": "images/image-removebg-preview (2).png"
+    },
+    {
+      "id": "1114",
+      "couverture": "",
+      "titre": "Villette",
+      "genre": "ROMAN CLASSIQUE",
+      "auteur": "Charlotte Brontë",
+      "description": "Villette est le roman le plus personnel de Charlotte Brontë (1853), qui suit Lucy Snowe, une jeune Anglaise réservée contrainte de tout reconstruire seule dans une ville étrangère. Entre solitude, répression des émotions et amour incertain, le récit explore avec une lucidité saisissante la condition féminine et la quête d'identité. C'est une œuvre introspective, mélancolique et d'une modernité surprenante.",
+      "alire": "true",
+      "add-btn": "images/image-removebg-preview (2).png"
+    },
+    {
+      "id": "1115",
+      "couverture": "",
+      "titre": "Jane Eyre",
+      "genre": "ROMAN GOTHIQUE",
+      "auteur": "Charlotte Brontë",
+      "description": "Jane Eyre est un roman fondateur de Charlotte Brontë (1847), qui retrace le destin de Jane, orpheline sans fortune mais d'une dignité inébranlable, de son enfance malheureuse jusqu'à son amour tourmenté pour le mystérieux Mr. Rochester. Face aux injustices, aux secrets et aux conventions sociales, Jane refuse de sacrifier ni son indépendance ni ses valeurs. C'est une œuvre passionnante, féministe avant l'heure, et profondément émouvante.",
+      "alire": "true",
+      "add-btn": "images/image-removebg-preview (2).png"
+    },
+    {
+      "id": "1116",
+      "couverture": "",
+      "titre": "Secrets and Masks",
+      "genre": "DARK ROMANCE",
+      "auteur": "Emerald Slytherin",
+      "description": "Secrets and Masks est une dark romance d'Emerald Slytherin, qui plonge dans une relation ambiguë faite de jeux de pouvoir, de mensonges savamment orchestrés et d'une attirance aussi dangereuse qu'irrésistible. Derrière chaque masque se cache une blessure, et derrière chaque secret, une vérité qui pourrait tout faire basculer. C'est une lecture addictive, intense et émotionnellement épuisante.",
+      "alire": "true",
+      "add-btn": "images/image-removebg-preview (2).png"
+    },
+    {
+      "id": "1117",
+      "couverture": "",
+      "titre": "White Nights",
+      "genre": "LITTERATURE RUSSE",
+      "auteur": "Fyodor Dostoyevsky",
+      "description": "Les Nuits blanches est une nouvelle poignante de Fiodor Dostoïevski (1848), qui raconte la rencontre fugace entre un jeune homme solitaire et Nastienka, une jeune femme attendant un amour qui ne vient pas, pendant les nuits lumineuses de Saint-Pétersbourg. En quelques jours suspendus hors du temps, naît une tendresse douce-amère vouée à l'impermanence. C'est un texte court, délicat et d'une tristesse magnifique.",
+      "alire": "true",
+      "add-btn": "images/image-removebg-preview (2).png"
+    },
+    {
+      "id": "1118",
+      "couverture": "",
+      "titre": "The Idiot",
+      "genre": "ROMAN PHILOSOPHIQUE",
+      "auteur": "Fyodor Dostoyevsky",
+      "description": "L'Idiot est un roman monumental de Fiodor Dostoïevski (1869), qui met en scène le prince Mychkine, homme doux et sincère revenu de Suisse après avoir soigné une épilepsie, jeté dans le tourbillon impitoyable de la société pétersbourgeoise. Sa bonté absolue, loin de le protéger, devient sa fragilité face à la cupidité, la jalousie et la folie des autres. C'est une réflexion bouleversante sur l'innocence, la beauté et l'impossibilité d'être bon dans un monde corrompu.",
+      "alire": "true",
+      "add-btn": "images/image-removebg-preview (2).png"
+    },
+    {
+      "id": "1120",
+      "couverture": "",
+      "titre": "Crime and Punishment",
+      "genre": "ROMAN PSYCHOLOGIQUE",
+      "auteur": "Fyodor Dostoyevsky",
+      "description": "Crime and Punishment est un roman majeur de Fiodor Dostoïevski (1866), qui suit Raskolnikov, un jeune étudiant pauvre de Saint-Pétersbourg convaincu que certaines personnes extraordinaires peuvent échapper aux lois morales. Après avoir commis un meurtre, il sombre progressivement dans la culpabilité, la peur et la folie. À travers ce récit intense, le roman explore la conscience humaine, la justice et les limites de la morale. C'est une œuvre sombre, philosophique et profondément psychologique.",
+      "alire": "true",
+      "add-btn": "images/image-removebg-preview (2).png"
+    },
+    {
+      "id": "1121",
+      "couverture": "",
+      "titre": "Pride and Prejudice",
+      "genre": "ROMAN CLASSIQUE",
+      "auteur": "Jane Austen",
+      "description": "Pride and Prejudice est un roman célèbre de Jane Austen (1813), qui raconte la relation complexe entre Elizabeth Bennet, une jeune femme vive et indépendante, et le mystérieux Mr. Darcy. Entre malentendus, orgueil et préjugés sociaux, le livre explore les attentes imposées aux femmes et les codes de la société anglaise du XIXe siècle. À travers des dialogues raffinés et une critique subtile des conventions sociales, Austen offre une œuvre élégante, romantique et intemporelle.",
+      "alire": "true",
+      "add-btn": "images/image-removebg-preview (2).png"
+    },
+    {
+      "id": "1122",
+      "couverture": "",
+      "titre": "The Great Gatsby",
+      "genre": "ROMAN CLASSIQUE",
+      "auteur": "F. Scott Fitzgerald",
+      "description": "Gatsby le Magnifique est un roman emblématique de F. Scott Fitzgerald (1925), qui plonge dans l'univers doré et décadent des années folles à travers Jay Gatsby, homme mystérieux bâti sur un rêve et une obsession : reconquérir Daisy, l'amour perdu de sa jeunesse. Derrière les fêtes somptueuses et les illusions de grandeur, le roman dévoile la fragilité du rêve américain et la cruauté d'une société fondée sur les apparences. C'est une œuvre mélancolique, poétique et d'une lucidité implacable.",
+      "alire": "true",
+      "add-btn": "images/image-removebg-preview (2).png"
+    },
+    {
+      "id": "1123",
+      "couverture": "",
+      "titre": "Les Misérables",
+      "genre": "ROMAN HISTORIQUE",
+      "auteur": "Victor Hugo",
+      "description": "Les Misérables est un roman monumental de Victor Hugo (1862), qui retrace le long chemin de Jean Valjean, ancien forçat brisé par la misère, vers la rédemption dans une France ravagée par les inégalités. Traqué par l'inflexible inspecteur Javert et portant le destin de la jeune Cosette, il incarne la lutte éternelle entre justice et humanité. À travers une galerie de personnages inoubliables et une fresque historique saisissante, Hugo crie sa révolte contre l'injustice sociale. C'est une œuvre titanesque, bouleversante et universelle.",
+      "alire": "true",
+      "add-btn": "images/image-removebg-preview (2).png"
+    },
+    {
+      "id": "1124",
+      "couverture": "",
+      "titre": "Dracula",
+      "genre": "ROMAN GOTHIQUE",
+      "auteur": "Bram Stoker",
+      "description": "Dracula est le roman gothique fondateur de Bram Stoker (1897), qui narre l'arrivée inquiétante du comte Dracula depuis les Carpates jusqu'aux brumes de l'Angleterre victorienne. Raconté à travers journaux intimes, lettres et télégrammes, le récit installe une atmosphère de terreur progressive où le surnaturel envahit le quotidien. Derrière l'horreur, l'œuvre interroge les peurs profondes de l'époque : la sexualité, la mort, l'étranger et la perte de contrôle. C'est un classique envoûtant, magistralement construit et indémodable.",
+      "alire": "true",
+      "add-btn": "images/image-removebg-preview (2).png"
+    },
+    {
+      "id": "1125",
+      "couverture": "",
+      "titre": "The Picture of Dorian Gray",
+      "genre": "ROMAN PHILOSOPHIQUE",
+      "auteur": "Oscar Wilde",
+      "description": "Le Portrait de Dorian Gray est le seul roman d'Oscar Wilde (1890), qui raconte la déchéance morale de Dorian Gray, jeune homme d'une beauté envoûtante ayant vendu son âme pour rester éternellement jeune pendant que son portrait, lui, porte le poids de ses crimes. Guidé par le cynique Lord Henry, il plonge dans une vie de plaisirs et de cruauté sans jamais en paraître marqué. À travers cette fable faustienne, Wilde interroge la vanité, l'art et la corruption de l'âme. C'est une œuvre brillante, provocatrice et d'une élégance vénéneuse.",
+      "alire": "true",
+      "add-btn": "images/image-removebg-preview (2).png"
+    }
+  ]
 }
