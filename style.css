@@ -359,78 +359,79 @@ nav {
   border: 2px solid #d8c3a0;
 
 }
-
-.book-card{
-  width:220px;
-  height:380px;
-  background:#050505;
-    border:2px solid #d8c39a;
+.book-card {
+  background: #050505;
+  border: 2px solid #b89b72;
+  padding: 12px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  width: 80%;        /* ← important */
+  height: auto;       /* ← important */
 }
-
-.book-card img:first-child{
-  width:100%;
-  height:250px;
-  object-fit:cover;
-}
-
-/* ===== CONTAINER GRID ===== */
-
-#livres-containner{
+.book-card img:first-child {
   width: 100%;
-  padding: 30px;
-  
+  height: 200px;  /* ← réduis de 250px à 200px */
+  object-fit: cover;
+}
+/* ===== CONTAINER GRID ===== */
+#livres-containner {
+  width: 100%;
+  padding: 20px;
   display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-  gap: 28px;
-
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;   /* réduit */
   background: #000;
 }
 
 
-/* ===== BOOK CARD ===== */
 
-.book-card{
+/* ===== BOOK CARD ===== */
+/* Image — hauteur plus grande + occupe toute la largeur */
+.book-card img:first-child {
+  width: 100%;
+  height: 320px;   /* augmenté */
+  object-fit: cover;
+}
+
+/* Titre — taille réduite */
+.book-info h3 {
+  color: #f5e6cc;
+  font-size: 16px;   /* réduit de 24px à 16px */
+  font-family: "Georgia", serif;
+  font-weight: 500;
+  margin-bottom: 3px;
+  margin-top: 9px;
+}
+
+/* Auteur — taille réduite aussi */
+.book-info p {
+  color: #c7a97d;
+  font-size: 13px;   /* réduit de 15px à 13px */
+  font-style: italic;
+  font-family: "Georgia", serif;
+}
+
+/* Supprime la hauteur fixe de la carte */
+.book-card {
   background: #050505;
   border: 2px solid #b89b72;
   padding: 12px;
-  
   display: flex;
   flex-direction: column;
   align-items: center;
-
   transition: 0.3s ease;
   cursor: pointer;
-
   position: relative;
+  /* height: 380px;  ← supprimé */
 }
-
 .book-card:hover{
   transform: translateY(-6px);
   box-shadow: 0 0 18px rgba(184,155,114,0.35);
-}
-
-/* ===== TEXT ===== */
-
-.book-info{
-  text-align: center;
-  margin-top: 14px;
-}
-
-.book-info h3{
-  color: #f5e6cc;
-  font-size: 24px;
-  font-family: "Georgia", serif;
-  font-weight: 500;
-
-  margin-bottom: 8px;
-}
-
-.book-info p{
-  color: #c7a97d;
-  font-size: 15px;
-  font-style: italic;
-  font-family: "Georgia", serif;
 }
 
 
@@ -468,29 +469,6 @@ nav {
 }
 
 
-/* ===== SMALL BOOKMARK STYLE ===== */
-
-.book-card::after{
-  content: "";
-
-  position: absolute;
-  bottom: 12px;
-  right: 12px;
-
-  width: 10px;
-  height: 18px;
-
-  background: #8b6b47;
-
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    50% 75%,
-    0 100%
-  );
-}
-
 
 /* ===== RESPONSIVE ===== */
 
@@ -508,14 +486,6 @@ nav {
   background: #000;
 }
 
-  .book-card img{
-    height: 240px;
-  }
-
-  .book-info h3{
-    font-size: 18px;
-  }
-
   .book-actions{
     flex-direction: column;
   }
@@ -524,4 +494,36 @@ nav {
   .details-btn{
     width: 100%;
   }
+}
+
+
+.fav-btn {
+  padding: 10px 14px;
+  border: 1px solid #b89b72;
+  background: transparent;
+  color: #f5e6cc;
+  font-size: 14px;
+  font-family: "Georgia", serif;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 100%;
+}
+
+.fav-btn:hover {
+  background: #b89b72;
+  color: #000;
+}
+
+.fav-btn.active {
+  background: #b89b72;
+  color: #000;
+  border-color: #d4b98a;
+}
+#favoris-container {
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;   /* même gap */
+  background: #000;
 }
