@@ -8,7 +8,6 @@ const state = {
 let genrecont = document.getElementById("genre-container");
 let novels = document.getElementById("livres-containner");
 let searchInput = document.getElementById("searchInput");
-let favorisContainer = document.getElementById("favoris-container");
 
 let APIURL = "http://localhost:3000";
 
@@ -36,7 +35,6 @@ async function fetshlivres() {
 
 function creatcategoriecard() {
   genrecont.innerHTML = "";
-
   state.genre.forEach((categorie) => {
     let card = document.createElement("div");
     card.className = "categorie-card";
@@ -47,10 +45,9 @@ function creatcategoriecard() {
     genrecont.appendChild(card);
   });
 }
-// Remplace creatlivrescard par :
+
 function creatlivrescard(booksToShow) {
   novels.innerHTML = "";
-
   booksToShow.forEach((book) => {
     const isFav = state.alire.some(b => b.id === book.id);
     let cardlv = document.createElement("div");
@@ -68,6 +65,9 @@ function creatlivrescard(booksToShow) {
       </div>
     `;
 
+    // Clic sur la carte → ouvre le modal
+    cardlv.addEventListener('click', () => openModal(book));
+
     // Clic sur le bouton favoris
     cardlv.querySelector('.fav-btn').addEventListener('click', (e) => {
       e.stopPropagation();
@@ -78,7 +78,6 @@ function creatlivrescard(booksToShow) {
   });
 }
 
-// Ajouter / retirer un livre des favoris
 function toggleFavori(book) {
   const index = state.alire.findIndex(b => b.id === book.id);
   if (index === -1) {
@@ -86,11 +85,10 @@ function toggleFavori(book) {
   } else {
     state.alire.splice(index, 1);
   }
-  creatlivrescard(state.books); // rafraîchir les cartes
-  renderFavoris();              // rafraîchir la section favoris
+  creatlivrescard(state.books);
+  renderFavoris();
 }
 
-// Afficher la section favoris
 function renderFavoris() {
   const container = document.getElementById("favoris-container");
   if (!container) return;
@@ -115,9 +113,16 @@ function renderFavoris() {
         <button class="fav-btn active" data-id="${book.id}">★ Retirer</button>
       </div>
     `;
-    card.querySelector('.fav-btn').addEventListener('click', () => {
+
+    // Clic sur la carte → ouvre le modal
+    card.addEventListener('click', () => openModal(book));
+
+    // Clic sur le bouton retirer
+    card.querySelector('.fav-btn').addEventListener('click', (e) => {
+      e.stopPropagation();
       toggleFavori(book);
     });
+
     container.appendChild(card);
   });
 }
@@ -127,20 +132,53 @@ function filterbooks(genre) {
     creatlivrescard(state.books);
     return;
   }
-
   const filtered = state.books.filter((book) => book.genre === genre);
-
   creatlivrescard(filtered);
 }
 
 searchInput.addEventListener("input", () => {
   const value = searchInput.value.toLowerCase();
-
   const filtered = state.books.filter((book) =>
-    book.titre.toLowerCase().includes(value),
+    book.titre.toLowerCase().includes(value)
   );
-
   creatlivrescard(filtered);
+});
+
+function openModal(book) {
+  const isFav = state.alire.some(b => b.id === book.id);
+  document.getElementById("modal-content").innerHTML = `
+    <img src="${book.couverture}" alt="${book.titre}">
+    <div class="modal-info">
+      <h2>${book.titre}</h2>
+      <div class="modal-desc">${book.description || 'Aucune description disponible.'}</div>
+      <p class="modal-meta">${book.auteur} — ${book.annee || ''}</p>
+      <p class="modal-genre">${book.genre || ''}</p>
+      <button class="modal-fav-btn ${isFav ? 'active' : ''}" onclick="toggleFavoriModal(${book.id})">
+        ${isFav ? '★ Sauvegardé' : 'Ajouter aux favoris'}
+      </button>
+    </div>
+  `;
+  state.currentbook = book;
+  document.getElementById("modal-overlay").classList.add("open");
+}
+
+function closeModal() {
+  document.getElementById("modal-overlay").classList.remove("open");
+  state.currentbook = null;
+}
+
+function toggleFavoriModal(id) {
+  const book = state.books.find(b => b.id === id);
+  if (!book) return;
+  toggleFavori(book);
+  const isFav = state.alire.some(b => b.id === id);
+  const btn = document.querySelector('.modal-fav-btn');
+  btn.textContent = isFav ? '★ Sauvegardé' : 'Ajouter aux favoris';
+  btn.classList.toggle('active', isFav);
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeModal();
 });
 
 fetshcategories();

@@ -110,7 +110,20 @@
 <div id="favoris-container"></div>
 
     </main>
+<div id="modal-overlay" onclick="closeModal()">
+  <div id="modal-box" onclick="event.stopPropagation()">
 
+    <!-- Coins décoratifs -->
+    <div class="corner top-left"></div>
+    <div class="corner top-right"></div>
+    <div class="corner bottom-left"></div>
+    <div class="corner bottom-right"></div>
+
+    <button id="modal-close" onclick="closeModal()">✕</button>
+
+    <div id="modal-content"></div>
+  </div>
+</div>
     <footer class="footer">
       <p>&copy; LIRE MONDE 2026.</p>
       <p>LireMonde@gmail.com</p>
