@@ -1,0 +1,242 @@
+/* ==========================================================================
+   1. RESET & CONFIGURATION GLOBALE
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #050403; /* Noir très sombre comme sur l'image */
+  color: #ffffff;
+  font-family: 'Playfair Display', Georgia, serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 30px 40px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.admin-nav {
+  background: #110e0a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  height: 60px;
+  border-bottom: 1px solid #3a2e1e;
+}
+
+/* ==========================================================================
+   2. BARRE D'OUTILS (TOOLBAR)
+   ========================================================================== */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+/* Badge Textuel Gauche (Effet double contour arrondi de la photo) */
+.status-badge {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #e2ccb0;
+  padding: 10px 24px;
+  background-color: #0b0907;
+  border: 1px solid #e2ccb0;
+  border-radius: 25px;
+  position: relative;
+  box-shadow: 0 0 0 3px #0b0907, 0 0 0 5px #e2ccb0; /* Crée le double contour */
+  margin-left: 6px; /* Espace pour le contour extérieur */
+}
+
+/* Bouton Ajouter un livre (Style beige/or mat de la photo) */
+.btn-gold {
+  background-color: #c5b293;
+  color: #050403;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-gold:hover {
+  background-color: #dcd0bc;
+  transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   3. DESIGN DU TABLEAU (STYLE EXACT DE LA PHOTO)
+   ========================================================================== */
+.table-wrap {
+  width: 100%;
+  border: 2px solid #ecdac3; /* Contour extérieur beige de la grille */
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #0a0806;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Entête du tableau */
+thead tr {
+  border-bottom: 2px solid #ecdac3;
+}
+
+th {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 18px 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Lignes du corps du tableau */
+tbody tr {
+  border-bottom: 1px solid #ecdac3; /* Ligne de séparation fine entre les lignes */
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+td {
+  padding: 20px 15px;
+  color: #ffffff;
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+/* Alignements */
+.center { text-align: center; }
+.left { text-align: left; }
+
+/* Cellule ID */
+.id-cell {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* Cellules de contenu textuel */
+.book-title {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.book-author {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+/* Formatage des couvertures d'images */
+.cover-cell img {
+  width: 70px;
+  height: 100px;
+  object-fit: cover;
+  border: 1px solid rgba(236, 218, 195, 0.3);
+  display: block;
+  margin: 0 auto;
+}
+
+/* Bouton plume d'action */
+.action-btn-feather {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-btn-feather:hover {
+  transform: scale(1.15);
+}
+
+.feather-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.5));
+}
+
+/* ==========================================================================
+   4. STRUCTURE DES MODAUX & FOOTER
+   ========================================================================== */
+.admin-footer {
+  text-align: center; 
+  padding: 40px 0; 
+  border-top: 1px solid #3a2e1e; 
+  margin-top: 40px;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: #110e0a;
+  border: 1px solid #ecdac3;
+  border-radius: 6px;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.modal h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+  color: #c9a227;
+  margin-bottom: 20px;
+}
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px; }
+.form-row.full { grid-template-columns: 1fr; }
+
+label {
+  display: block;
+  font-size: 11px;
+  color: #8a7a62;
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+  width: 100%;
+  background: #1a1510;
+  border: 1px solid #3a2e1e;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.form-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px; }
+.btn-ghost { background: transparent; border: 1px solid #3a2e1e; color: #8a7a62; cursor: pointer; padding: 10px 20px; border-radius: 4px; }
+.btn-danger { background: #c0392b; color: white; border: none; cursor: pointer; padding: 10px 20px; border-radius: 4px; }
