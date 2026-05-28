@@ -128,12 +128,43 @@ function renderFavoris() {
 }
 
 function filterbooks(genre) {
-  if (genre === "All") {
-    creatlivrescard(state.books);
-    return;
-  }
-  const filtered = state.books.filter((book) => book.genre === genre);
+  const filtered = state.books.filter(
+    (book) => book.genre === genre
+  );
+
   creatlivrescard(filtered);
+}
+function creatcategoriecard() {
+  genrecont.innerHTML = "";
+
+  // bouton ALL
+  let all = document.createElement("div");
+  all.className = "categorie-card";
+  all.innerHTML = `<h3>All</h3>`;
+
+  all.addEventListener("click", () => {
+    creatlivrescard(state.books);
+  });
+
+  genrecont.appendChild(all);
+
+  // autres catégories
+  state.genre.forEach((categorie) => {
+
+    let card = document.createElement("div");
+    card.className = "categorie-card";
+
+    card.innerHTML = `
+      <img src="${categorie.image}">
+      <h3>${categorie.type}</h3>
+    `;
+
+    card.addEventListener("click", () => {
+      filterbooks(categorie.type);
+    });
+
+    genrecont.appendChild(card);
+  });
 }
 
 searchInput.addEventListener("input", () => {

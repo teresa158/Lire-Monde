@@ -5,15 +5,15 @@
       "image": "images/Busts Philosophy Aristotle - Free photo on Pixabay.jpeg",
       "type": "PHILOSOPHIE"
     },
-    { "id": "0001", "image": "", "type": "LITTERATURE CLASSIQUE" },
-    { "id": "0002", "image": "", "type": "HISTORY" },
-    { "id": "0003", "image": "", "type": "POETRY" }
+    { "id": "0001", "image": "images/Worn Pages – Cozy Rainy Day Companion.jpeg", "type": "LITTERATURE CLASSIQUE" },
+    { "id": "0002", "image": "images/ChatGPT Image 19 mai 2026, 10_29_40.png", "type": "HISTORY" },
+    { "id": "0003", "image": "images/dr_ alana bloom aes _ hannibal.jpeg", "type": "POETRY" }
   ],
 
   "livres": [
     {
       "id": "1111",
-      "couverture": "",
+      "couverture": "images/image copy 7.png",
       "titre": "Madame Bovary",
       "genre": "LITTERATURE CLASSIQUE",
       "auteur": "Gustave Flaubert",
