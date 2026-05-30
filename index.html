@@ -1,153 +1,105 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LireMonde</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- NAVIGATION -->
-    <nav>
-      <div class="navbar-brand">
-        <a href="index.html" class="logo">
-          <img
-            src="images/Download_free_png_of_PNG_Vintage_book_with_quill__transparent_background_by_Nardsucha_about_open_book_png__quill_pen__feather_pen__open_book__and_quill_15160467-removebg-preview.png"
-            alt
-            class="logo-img"
-          />
-          <span class="logo-text">LIRE MONDE</span>
-        </a>
-      </div>
 
-      <ul class="navbar-menu">
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Bibliothèque</a></li>
-        <li><a href="admin.html">admin</a></li>
-        <li><a href="#">Cathégories</a></li>
-      </ul>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LireMonde</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <!-- HERO -->
-    <section class="hero">
-      <!-- Content -->
-      <div class="content">
-        <span class="hero-eyebrow-text">Bibliothèque Universelle</span>
-
-        <h1 class="hero-title">
-          La connaissance<br />
-          est une <em>lumière</em><br />dans l'obscurité
-        </h1>
-
-        <p class="hero-desc">
-          Explorez des milliers d'ouvrages classiques et contemporains.Lisez,
-          apprenez, inspirez-vous.
-        </p>
-
-        <a href="#" class="hero-cta">
-          Explorez la bibliothèque
-          <span class="hero-cta-arrow"></span>
-        </a>
-      </div>
-
-      <img
-        src="images/WhatsApp Image 2026-05-18 at 15.00.03.jpeg"
-        alt="jssk"
-        class="devider1"
-      />
-    </section>
-
-    <main>
-      <img
-        src="images/ChatGPT_Image_21_mai_2026__11_15_51-removebg-preview.png"
-        alt=""
-        class="pictitle"/>
-        <div class="scroll-wrapper">
-  <div class="scroll-buttons">
-    <button id="scrollLeft">▲</button>
-    <button id="scrollRight">▼</button>
-  </div>
-
-        <div id="genre-container"></div>
-
-</div>
-
-      <div id="genre-container"></div>
-
-      <img
-        src="images/ChatGPT_Image_28_mai_2026__17_49_35-removebg-preview.png"
-        alt=""
-        class="pictitle"
-      />
-
-      <div class="search-container-header">
-        <input
-          id="searchInput"
-          class="search-input"
-          placeholder="CHERCHER UN LIVRE..."
-        />
+<body>
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="navbar-brand">
+      <a href="index.html" class="logo">
         <img
-          src="images/image-removebg-preview.png"
-          alt=""
-          class="search-icon"
-        />
-      </div>
-
-      <div id="livres-containner"></div>
-
-      <img
-        src="images/ChatGPT_Image_28_mai_2026__17_56_29-removebg-preview.png"
-        alt=""
-        class="pictitle"
-      />
-
-      <div class="search-container-header">
-        <input
-          id="searchInput"
-          class="search-input"
-          placeholder="CHERCHER UN LIVRE..."
-        />
-        <img
-          src="images/image-removebg-preview.png"
-          alt=""
-          class="search-icon"
-        />
-      </div>
-      <!-- Par : -->
-      <div id="favoris-container"></div>
-    </main>
-    <div id="modal-overlay" onclick="closeModal()">
-      <div
-        id="modal-box"
-        onclick="event.stopPropagation()"
-        style="--corner-img: url(&quot;download (27).jpeg&quot;)"
-      >
-        <img
-          src="images/download__27_-removebg-preview.png"
-          class="top-left"
-        />
-        <img
-          src="images/download__27_-removebg-preview.png"
-          class="top-right"
-        />
-        <img
-          src="images/download__27_-removebg-preview.png"
-          class="bottom-left"
-        />
-
-        <img
-          src="images/download__27_-removebg-preview.png"
-          class="bottom-right"
-        />
-
-        <div id="modal-content"></div>
-      </div>
+          src="images/Download_free_png_of_PNG_Vintage_book_with_quill__transparent_background_by_Nardsucha_about_open_book_png__quill_pen__feather_pen__open_book__and_quill_15160467-removebg-preview.png"
+          alt class="logo-img" />
+        <span class="logo-text">LIRE MONDE</span>
+      </a>
     </div>
-    <footer class="footer">
-      <p>&copy; LIRE MONDE 2026.</p>
-      <p>LireMonde@gmail.com</p>
-    </footer>
 
-    <script src="java.js"></script>
-  </body>
+    <ul class="navbar-menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="#genre-container">Cathégories</a></li>
+      <li><a href="#livres-containner">Bibliothèque</a></li>
+      <li><a href="a-lire.html">À lire</a></li>
+      <li><a href="admin.html">admin</a></li>
+      <li><a href="#searchInput">Chercher un livre</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <!-- Content -->
+    <div class="content">
+      <span class="hero-eyebrow-text">Bibliothèque Universelle</span>
+
+      <h1 class="hero-title">
+        La connaissance<br />
+        est une <em>lumière</em><br />dans l'obscurité
+      </h1>
+
+      <p class="hero-desc">
+        Explorez des milliers d'ouvrages classiques et contemporains.Lisez,
+        apprenez, inspirez-vous.
+      </p>
+
+      <a href="#livres-containner" class="hero-cta">
+        Explorez la bibliothèque
+        <span class="hero-cta-arrow"></span>
+      </a>
+    </div>
+
+    <img src="images/WhatsApp Image 2026-05-18 at 15.00.03.jpeg" alt="jssk" class="devider1" />
+  </section>
+
+  <main>
+    <img src="images/ChatGPT_Image_21_mai_2026__11_15_51-removebg-preview.png" alt="" class="pictitle" />
+
+
+    <div id="genre-container"></div>
+
+    </div>
+
+    <div id="genre-container"></div>
+
+    <img src="images/ChatGPT_Image_28_mai_2026__17_45_26-removebg-preview (1).png" alt="" class="pictitle" />
+
+    <div class="search-container-header">
+      <input id="searchInput" class="search-input" placeholder="CHERCHER UN LIVRE..." />
+      <img src="images/image-removebg-preview.png" alt="" class="search-icon" />
+    </div>
+
+    <div id="livres-containner"></div>
+
+    <img src="images/ChatGPT_Image_28_mai_2026__17_56_29-removebg-preview.png" alt="" class="pictitle" />
+
+    <div class="search-container-header">
+      <input id="searchInput" class="search-input" placeholder="CHERCHER UN LIVRE..." />
+      <img src="images/image-removebg-preview.png" alt="" class="search-icon" />
+    </div>
+    <!-- Par : -->
+    <div id="favoris-container"></div>
+  </main>
+  <div id="modal-overlay" onclick="closeModal()">
+    <div id="modal-box" onclick="event.stopPropagation()" style="--corner-img: url(&quot;download (27).jpeg&quot;)">
+      <img src="images/download__27_-removebg-preview.png" class="top-left" />
+      <img src="images/download__27_-removebg-preview.png" class="top-right" />
+      <img src="images/download__27_-removebg-preview.png" class="bottom-left" />
+
+      <img src="images/download__27_-removebg-preview.png" class="bottom-right" />
+
+      <div id="modal-content"></div>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>&copy; LIRE MONDE 2026.</p>
+    <p>LireMonde@gmail.com</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

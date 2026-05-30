@@ -140,7 +140,10 @@ function creatcategoriecard() {
   // bouton ALL
   let all = document.createElement("div");
   all.className = "categorie-card";
-  all.innerHTML = `<h3>All</h3>`;
+  all.innerHTML = `
+    <img src="images/image copy 15.png" alt="All">
+    <h3>All</h3>
+`;
 
   all.addEventListener("click", () => {
     creatlivrescard(state.books);

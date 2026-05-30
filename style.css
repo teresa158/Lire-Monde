@@ -535,7 +535,7 @@ nav {
 }
 
 #modal-box {
-  background: #0F0606;
+  background: #0f0606;
   border: 1px solid #b89b72;
   width: 700px;
   max-width: 90vw;
@@ -552,7 +552,7 @@ nav {
 .bottom-left,
 .bottom-right {
   position: absolute;
-  width: 90px;   /* qiyass */
+  width: 90px; /* qiyass */
   opacity: 0.9;
 }
 
@@ -635,12 +635,12 @@ nav {
 .modal-info h2 {
   font-family: "Cinzel", serif;
   font-size: 22px;
-  color: #DCC7AA;
+  color: #dcc7aa;
   margin-bottom: 16px;
 }
 
 .modal-info .modal-desc {
-  border: 2px solid #DCC7AA;
+  border: 2px solid #dcc7aa;
   padding: 18px;
   font-style: italic;
   font-family: "Georgia", serif;
@@ -665,16 +665,15 @@ nav {
   margin-bottom: 20px;
 }
 .modal-meta,
-.modal-genre{
+.modal-genre {
   margin-left: -200px;
 }
-
 
 .modal-fav-btn {
   padding: 12px 28px;
   border: 1px solid #b89b72;
-  background: #BDA67D;
-  color: #0F0606;
+  background: #bda67d;
+  color: #0f0606;
   font-size: 14px;
   font-family: "Playfair", serif;
   cursor: pointer;
@@ -732,7 +731,7 @@ nav {
 }
 
 .table-cover {
-  width: 60px;    /* ← change selon ta préférence */
-  height: 80px;   /* ← change selon ta préférence */
+  width: 60px; /* ← change selon ta préférence */
+  height: 80px; /* ← change selon ta préférence */
   object-fit: cover;
 }

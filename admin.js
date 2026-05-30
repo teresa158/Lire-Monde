@@ -1,28 +1,23 @@
-/* ===================================================
-   admin.js — Gestion CRUD des livres (LireMonde)
-   Connexion : http://localhost:3000/livres (json-server)
-=================================================== */
-
 /* ========== SÉLECTEURS ========== */
-const tableBody      = document.getElementById("tableBody");
-const adminModal     = document.getElementById("adminModal");
-const openAddModal   = document.getElementById("openAddModal");
-const cancelBtn      = document.getElementById("cancelBtn");
-const modalCloseX    = document.getElementById("modalCloseX");
-const bookForm       = document.getElementById("bookForm");
-const saveBtn        = document.getElementById("saveBtn");
+const tableBody = document.getElementById("tableBody");
+const adminModal = document.getElementById("adminModal");
+const openAddModal = document.getElementById("openAddModal");
+const cancelBtn = document.getElementById("cancelBtn");
+const modalCloseX = document.getElementById("modalCloseX");
+const bookForm = document.getElementById("bookForm");
+const saveBtn = document.getElementById("saveBtn");
 const confirmOverlay = document.getElementById("confirmOverlay");
-const confirmCancel  = document.getElementById("confirmCancel");
+const confirmCancel = document.getElementById("confirmCancel");
 const confirmDeleteBtn = document.getElementById("confirmDelete");
-const searchInput    = document.getElementById("searchInput");
-const coverPreview   = document.getElementById("coverPreview");
+const searchInput = document.getElementById("searchInput");
+const coverPreview = document.getElementById("coverPreview");
 
-const bookId      = document.getElementById("bookId");
-const titleInput  = document.getElementById("title");
+const bookId = document.getElementById("bookId");
+const titleInput = document.getElementById("title");
 const authorInput = document.getElementById("author");
-const genreInput  = document.getElementById("genre");
-const descInput   = document.getElementById("description");
-const coverInput  = document.getElementById("cover");
+const genreInput = document.getElementById("genre");
+const descInput = document.getElementById("description");
+const coverInput = document.getElementById("cover");
 const alireToggle = document.getElementById("alireToggle");
 
 const statTotal = document.getElementById("statTotal");
@@ -51,7 +46,7 @@ function toast(msg, type = "success") {
 /* ========== STATS ========== */
 function updateStats(books) {
   statTotal.textContent = books.length;
-  statAlire.textContent = books.filter(b => b.alire === "true").length;
+  statAlire.textContent = books.filter((b) => b.alire === "true").length;
 }
 
 /* ========== FETCH ========== */
@@ -95,11 +90,7 @@ function renderBooks(books) {
       <td>${book.titre}</td>
       <td>${book.auteur}</td>
       <td>${book.genre || "—"}</td>
-      <td>
-        <span class="badge ${book.alire === "true" ? "yes" : "no"}">
-          ${book.alire === "true" ? "Oui" : "Non"}
-        </span>
-      </td>
+    
       <td>
         <div class="action-btns">
           <button class="edit-btn" title="Modifier">
@@ -111,8 +102,12 @@ function renderBooks(books) {
         </div>
       </td>`;
 
-    tr.querySelector(".edit-btn").addEventListener("click", () => editBook(book));
-    tr.querySelector(".delete-btn").addEventListener("click", () => askDelete(book.id));
+    tr.querySelector(".edit-btn").addEventListener("click", () =>
+      editBook(book),
+    );
+    tr.querySelector(".delete-btn").addEventListener("click", () =>
+      askDelete(book.id),
+    );
     tableBody.appendChild(tr);
   });
 }
@@ -120,9 +115,9 @@ function renderBooks(books) {
 /* ========== RECHERCHE ========== */
 searchInput.addEventListener("input", () => {
   const q = searchInput.value.toLowerCase();
-  const filtered = allBooks.filter(b =>
-    b.titre.toLowerCase().includes(q) ||
-    b.auteur.toLowerCase().includes(q)
+  const filtered = allBooks.filter(
+    (b) =>
+      b.titre.toLowerCase().includes(q) || b.auteur.toLowerCase().includes(q),
   );
   renderBooks(filtered);
 });
@@ -156,7 +151,7 @@ openAddModal.addEventListener("click", () => {
 
 cancelBtn.addEventListener("click", closeModal);
 modalCloseX.addEventListener("click", closeModal);
-adminModal.addEventListener("click", e => {
+adminModal.addEventListener("click", (e) => {
   if (e.target === adminModal) closeModal();
 });
 
@@ -175,13 +170,13 @@ bookForm.addEventListener("submit", async (e) => {
   const isEdit = !!bookId.value;
 
   const newBook = {
-    id:          bookId.value || Date.now().toString(),
-    couverture:  coverInput.value,
-    titre:       titleInput.value,
-    auteur:      authorInput.value,
-    genre:       genreInput.value,
+    id: bookId.value || Date.now().toString(),
+    couverture: coverInput.value,
+    titre: titleInput.value,
+    auteur: authorInput.value,
+    genre: genreInput.value,
     description: descInput.value,
-    alire:       alireToggle.checked ? "true" : "false"
+    alire: alireToggle.checked ? "true" : "false",
   };
 
   saveBtn.classList.add("loading");
@@ -192,24 +187,22 @@ bookForm.addEventListener("submit", async (e) => {
       await fetch(`${API}/${bookId.value}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(newBook)
+        body: JSON.stringify(newBook),
       });
       toast("Livre modifié avec succès.");
     } else {
       await fetch(API, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(newBook)
+        body: JSON.stringify(newBook),
       });
       toast("Livre ajouté avec succès.");
     }
 
     await fetchBooks();
     closeModal();
-
   } catch (err) {
     toast("Une erreur est survenue.", "error");
-
   } finally {
     saveBtn.classList.remove("loading");
     saveBtn.innerHTML = `<i class="fa-solid fa-floppy-disk"></i> Enregistrer`;
@@ -219,12 +212,12 @@ bookForm.addEventListener("submit", async (e) => {
 /* ========== MODIFIER ========== */
 function editBook(book) {
   openModal("Modifier un livre");
-  bookId.value        = book.id;
-  titleInput.value    = book.titre;
-  authorInput.value   = book.auteur;
-  genreInput.value    = book.genre || "";
-  descInput.value     = book.description;
-  coverInput.value    = book.couverture;
+  bookId.value = book.id;
+  titleInput.value = book.titre;
+  authorInput.value = book.auteur;
+  genreInput.value = book.genre || "";
+  descInput.value = book.description;
+  coverInput.value = book.couverture;
   alireToggle.checked = book.alire === "true";
 
   if (book.couverture) {

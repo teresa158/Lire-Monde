@@ -18,11 +18,16 @@
     {
       "id": "0003",
       "image": "images/dr_ alana bloom aes _ hannibal.jpeg",
-      "type": "POETRY"
+      "type": "Livres poétiques"
     },
     {
       "id": "0004",
-      "image": "images/image copy 10.png",
+      "image": "images/image copy 17.png",
+      "type": "DARK ROMANCE"
+    },
+    {
+      "id": "0004",
+      "image": "images/image copy 18.png",
       "type": "ROMAN GOTHIQUE"
     }
   ],
@@ -33,17 +38,17 @@
       "titre": "Madame Bovary",
       "genre": "ROMAN CLASSIQUE",
       "auteur": "Gustave Flaubert",
-      "description": "Madame Bovary est un roman de Gustave Flaubert (1857) qui suit Emma Bovary, une femme de province nourrie d’illusions romantiques, incapable d’accepter la monotonie de sa vie de campagne. Entre désirs frustrés, adultères et dettes croissantes, elle s’enferme peu à peu dans un drame intérieur. Le roman critique durement les illusions sentimentales et la société bourgeoise. C’est une œuvre précise, sombre et profondément réaliste. Il met aussi en avant la solitude psychologique d’une femme enfermée dans ses rêves. Cette solitude accentue sa chute progressive vers le désespoir.",
+      "description": "Madame Bovary est un roman de Gustave Flaubert (1857) qui raconte l’histoire d’Emma Bovary, une femme insatisfaite de sa vie provinciale et en quête d’un idéal romantique. Entre passions, désillusions et difficultés financières, elle s’enfonce dans une spirale tragique. Cette œuvre réaliste critique les illusions amoureuses et les conventions sociales de son époque.",
       "alire": "true",
       "add-btn": "images/download__29_-removebg-preview.png"
     },
     {
       "id": "1112",
-      "couverture": "images/download (23).jpeg",
+      "couverture": "images/Anna Karenina (2012).jpeg",
       "titre": "Anna Karenina",
       "genre": "ROMAN CLASSIQUE",
       "auteur": "Leo Tolstoy",
-      "description": "Anna Karénine est un roman de Léon Tolstoï (1877) qui raconte le destin tragique d’Anna, une aristocrate russe déchirée entre son devoir social et sa passion interdite pour Vronski. Son choix provoque rejet, jalousie et chute progressive. Parallèlement, d’autres personnages illustrent la quête du sens et du bonheur. C’est une œuvre profonde, réaliste et émotionnellement intense. Le roman montre aussi les contradictions de la société russe de l’époque. Il explore les conséquences destructrices des passions non maîtrisées.",
+      "description": "Anna Karénine est un roman de Léon Tolstoï (1877) qui raconte le destin tragique d’Anna, une aristocrate russe déchirée entre son devoir social et sa passion interdite pour Vronski. Son choix provoque rejet, jalousie et chute progressive. Parallèlement, d’autres personnages illustrent la quête du sens et du bonheur. C’est une œuvre profonde, réaliste et émotionnellement intense. ",
       "alire": "true",
       "add-btn": "images/image-removebg-preview (2).png"
     },
@@ -53,7 +58,7 @@
       "titre": "Wuthering Heights",
       "genre": "ROMAN GOTHIQUE",
       "auteur": "Emily Brontë",
-      "description": "Les Hauts de Hurlevent est un roman d’Emily Brontë (1847) qui décrit une passion destructrice entre Heathcliff et Catherine, sur fond de landes sauvages et de vengeance. Leur amour intense survit aux conflits et aux générations. Le récit explore la violence des sentiments et l’obsession. C’est une œuvre sombre, puissante et tragique. L’atmosphère du roman est marquée par une tension constante et une douleur émotionnelle profonde. Cette intensité rend l’histoire inoubliable et bouleversante.",
+      "description": "Les Hauts de Hurlevent est un roman d’Emily Brontë (1847) qui décrit une passion destructrice entre Heathcliff et Catherine, sur fond de landes sauvages et de vengeance. Leur amour intense survit aux conflits et aux générations. Le récit explore la violence des sentiments et l’obsession. C’est une œuvre sombre, puissante et tragique.",
       "alire": "true",
       "add-btn": "images/image-removebg-preview (2).png"
     },
@@ -63,8 +68,7 @@
       "titre": "Villette",
       "genre": "ROMAN CLASSIQUE",
       "auteur": "Charlotte Brontë",
-      "description": "Villette est un roman de Charlotte Brontë (1853) qui suit Lucy Snowe, une jeune femme anglaise solitaire reconstruisant sa vie dans une ville étrangère. Elle affronte solitude, silence émotionnel et amour incertain. Le récit explore la psychologie et la condition féminine. C’est une œuvre introspective et mélancolique. Le roman insiste aussi sur la difficulté de s’intégrer dans une société étrangère. Il met en lumière la force intérieure nécessaire pour survivre à l’isolement.",
-      "alire": "true",
+      "description": "Villette est un roman de Charlotte Brontë (1853) qui suit Lucy Snowe, une jeune femme anglaise solitaire reconstruisant sa vie dans une ville étrangère. Elle affronte solitude, silence émotionnel et amour incertain. Le récit explore la psychologie et la condition féminine. C’est une œuvre introspective et mélancolique.",
       "add-btn": "images/image-removebg-preview (2).png"
     },
     {
@@ -73,7 +77,7 @@
       "titre": "Jane Eyre",
       "genre": "ROMAN GOTHIQUE",
       "auteur": "Charlotte Brontë",
-      "description": "Jane Eyre est un roman de Charlotte Brontë (1847) qui raconte la vie de Jane, orpheline forte et indépendante, confrontée à l’injustice et aux épreuves. Elle grandit en cherchant liberté et amour auprès de Mr. Rochester. Le récit met en valeur sa dignité et ses choix moraux. C’est une œuvre romantique et féministe. Jane lutte constamment pour préserver son identité face aux normes sociales. Son parcours illustre la recherche d’un équilibre entre amour et liberté.",
+      "description": "Jane Eyre est un roman de Charlotte Brontë (1847) qui raconte la vie de Jane, orpheline forte et indépendante, confrontée à l’injustice et aux épreuves. Elle grandit en cherchant liberté et amour auprès de Mr. Rochester. Le récit met en valeur sa dignité et ses choix moraux. C’est une œuvre romantique et féministe. Jane lutte constamment pour préserver son identité face aux normes sociales.",
       "alire": "true",
       "add-btn": "images/image-removebg-preview (2).png"
     },
@@ -83,7 +87,7 @@
       "titre": "Secrets and Masks",
       "genre": "DARK ROMANCE",
       "auteur": "Emerald Slytherin",
-      "description": "Secrets and Masks est une dark romance d’Emerald Slytherin qui explore une relation complexe faite de manipulation, secrets et attraction dangereuse. Chaque personnage cache une vérité enfouie derrière un masque. Le récit joue sur la tension émotionnelle et le pouvoir. C’est une lecture intense et addictive. Les relations entre les personnages évoluent dans un climat de méfiance permanente. Cette ambiance crée une intrigue psychologique forte et captivante.",
+      "description": "Secrets and Masks est une dark romance d’Emerald Slytherin qui explore une relation complexe faite de manipulation, secrets et attraction dangereuse. Chaque personnage cache une vérité enfouie derrière un masque. Le récit joue sur la tension émotionnelle et le pouvoir. C’est une lecture intense et addictive. Les relations entre les personnages évoluent dans un climat de méfiance permanente.",
       "alire": "true",
       "add-btn": "images/image-removebg-preview (2).png"
     },
@@ -184,6 +188,46 @@
       "genre": "ROMAN PHILOSOPHIQUE",
       "auteur": "Fyodor Dostoyevsky",
       "description": "Les Frères Karamazov de Dostoïevski met en scène trois frères confrontés à un meurtre et à des conflits familiaux profonds. Le roman explore foi, doute et morale. Chaque personnage incarne une vision du monde. C’est une œuvre philosophique majeure. Les tensions familiales révèlent des questions existentielles profondes. Le récit interroge la liberté et la responsabilité humaine.",
+      "alire": "true",
+      "add-btn": "images/image-removebg-preview (2).png"
+    },
+    {
+      "id": "1132",
+      "couverture": "images/image copy 16.png",
+      "titre": "The Raven",
+      "genre": "Livres poétiques",
+      "auteur": "Edgar Allan Poe",
+      "description": "The Raven est un célèbre poème gothique d’Edgar Allan Poe qui raconte la visite mystérieuse d’un corbeau dans la chambre d’un homme endeuillé. Hanté par le souvenir de Lenore, son amour disparu, le narrateur cherche désespérément du réconfort. Le corbeau répète inlassablement le mot « Nevermore », accentuant son désespoir.",
+      "alire": "true",
+      "add-btn": "images/image-removebg-preview (2).png"
+    },
+    {
+      "id": "1118",
+      "couverture": "images/image copy 5.png",
+      "titre": "Les Fleurs du Mal",
+      "genre": "Livres poétiques",
+      "auteur": "Charles Baudelaire",
+      "description": "Les Fleurs du Mal est le recueil de poésie le plus célèbre de Charles Baudelaire, publié en 1857. À travers des poèmes riches en images et en émotions, l’auteur explore la beauté, la mélancolie, l’amour et la condition humaine. L’œuvre met en lumière le contraste entre l’idéal recherché et les réalités parfois sombres de l’existence. Chaque texte révèle une profonde réflexion sur les sentiments et le passage du temps.",
+      "alire": "true",
+      "add-btn": "images/image-removebg-preview (2).png"
+    },
+    {
+      "id": "1134",
+      "couverture": "images/image copy 12.png",
+      "titre": "Haunting Adeline",
+      "genre": "DARK ROMANCE",
+      "auteur": "H.D. Carlton",
+      "description": "Haunting Adeline est une dark romance captivante qui suit Adeline, une écrivaine vivant dans un manoir rempli de secrets. Sa vie change lorsqu’un homme mystérieux et obsédant entre dans son univers. Entre fascination, peur et désir, leur relation devient de plus en plus intense. Le roman mélange suspense, romance et psychologie dans une atmosphère sombre. Les personnages sont confrontés à leurs limites et à leurs démons.",
+      "alire": "true",
+      "add-btn": "images/image-removebg-preview (2).png"
+    },
+    {
+      "id": "1135",
+      "couverture": "images/image copy 14.png",
+      "titre": "A Dowry of Blood",
+      "genre": "DARK ROMANCE",
+      "auteur": "S.T. Gibson",
+      "description": "A Dowry of Blood est une dark romance gothique de S.T. Gibson qui revisite le mythe de Dracula à travers le regard de l’une de ses épouses. Entre amour, emprise et quête de liberté, elle raconte son existence au sein d’une relation aussi passionnée que destructrice. Le roman explore les thèmes du pouvoir, de l’obsession et de l’émancipation dans une atmosphère sombre et poétique.",
       "alire": "true",
       "add-btn": "images/image-removebg-preview (2).png"
     }

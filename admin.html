@@ -1,44 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LireMonde — Admin</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="admin.css">
-    <link rel="stylesheet" href="style.css">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LireMonde — Admin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="admin.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="navbar-brand">
+      <a href="index.html" class="logo">
+        <img
+          src="images/Download_free_png_of_PNG_Vintage_book_with_quill__transparent_background_by_Nardsucha_about_open_book_png__quill_pen__feather_pen__open_book__and_quill_15160467-removebg-preview.png"
+          alt class="logo-img" />
+        <span class="logo-text">LIRE MONDE</span>
+      </a>
+    </div>
 
-   <!-- NAVIGATION -->
-    <nav>
-      <div class="navbar-brand">
-        <a href="index.html" class="logo">
-          <img
-            src="images/Download_free_png_of_PNG_Vintage_book_with_quill__transparent_background_by_Nardsucha_about_open_book_png__quill_pen__feather_pen__open_book__and_quill_15160467-removebg-preview.png"
-            alt
-            class="logo-img"
-          />
-          <span class="logo-text">LIRE MONDE</span>
-        </a>
-      </div>
-
-      <ul class="navbar-menu">
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Bibliothèque</a></li>
-        <li><a href="admin.html">admin</a></li>
-        <li><a href="#">Cathégories</a></li>
-      </ul>
-    </nav>
-
+    <ul class="navbar-menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="admin.html">admin</a></li>
+    </ul>
+  </nav>
 
   <!-- ===== ADMIN PAGE ===== -->
   <section class="admin-page">
-
     <!-- Header -->
     <div class="admin-header">
       <div class="header-left">
@@ -59,20 +54,13 @@
           <strong id="statTotal">—</strong>
         </div>
       </div>
-      <div class="stat-card">
-        <i class="fa-solid fa-bookmark"></i>
-        <div class="stat-info">
-          <span>À lire</span>
-          <strong id="statAlire">—</strong>
-        </div>
-      </div>
     </div>
 
     <!-- Search -->
     <div class="search-row">
       <div class="search-wrap">
         <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" id="searchInput" placeholder="Rechercher par titre ou auteur…">
+        <input type="text" id="searchInput" placeholder="Rechercher par titre ou auteur…" />
       </div>
     </div>
 
@@ -86,20 +74,17 @@
             <th>Titre</th>
             <th>Auteur</th>
             <th>Genre</th>
-            <th>À Lire</th>
             <th>Actions</th>
           </tr>
         </thead>
         <tbody id="tableBody"></tbody>
       </table>
     </section>
-
   </section>
 
   <!-- ===== MODAL AJOUTER / MODIFIER ===== -->
   <div id="adminModal" class="admin-modal">
     <div class="admin-modal-content">
-
       <div class="modal-header">
         <h2 id="modalTitle">Ajouter un livre</h2>
         <button class="modal-close" id="modalCloseX">
@@ -108,27 +93,27 @@
       </div>
 
       <form id="bookForm">
-        <input type="hidden" id="bookId">
+        <input type="hidden" id="bookId" />
 
         <div class="form-row">
           <div class="form-group">
             <label for="title">Titre</label>
-            <input type="text" id="title" placeholder="Ex : Dracula…" required>
+            <input type="text" id="title" placeholder="Ex : Dracula…" required />
           </div>
           <div class="form-group">
             <label for="author">Auteur</label>
-            <input type="text" id="author" placeholder="Ex : Bram Stoker…" required>
+            <input type="text" id="author" placeholder="Ex : Bram Stoker…" required />
           </div>
         </div>
 
         <label for="genre">Genre</label>
         <select id="genre" required>
           <option value="">Sélectionner un genre</option>
-          <option>Fantaisie</option>
-          <option>Drame</option>
-          <option>Classique</option>
+          <option>ROMAN PHILOSOPHIQUE</option>
+          <option>ROMAN CLASSIQUE</option>
+          <option>ROMAN HISTORIQUE</option>
           <option>Science-fiction</option>
-          <option>Comédie</option>
+          <option>ROMAN GOTHIQUE</option>
           <option>Horreur</option>
           <option>Romance</option>
           <option>Policier</option>
@@ -138,25 +123,26 @@
         <textarea id="description" placeholder="Description du livre…" required></textarea>
 
         <label for="cover">Couverture (URL)</label>
-        <input type="text" id="cover" placeholder="https://example.com/cover.jpg" required>
-        <img id="coverPreview" class="cover-preview" alt="Aperçu">
+        <input type="text" id="cover" placeholder="https://example.com/cover.jpg" required />
+        <img id="coverPreview" class="cover-preview" alt="Aperçu" />
 
         <div class="toggle-row">
           <span>À lire</span>
           <label class="toggle">
-            <input type="checkbox" id="alireToggle" checked>
+            <input type="checkbox" id="alireToggle" checked />
             <span class="slider"></span>
           </label>
         </div>
 
         <div class="form-buttons">
-          <button type="button" id="cancelBtn" class="cancel-btn">Annuler</button>
+          <button type="button" id="cancelBtn" class="cancel-btn">
+            Annuler
+          </button>
           <button type="submit" id="saveBtn" class="save-btn">
             <i class="fa-solid fa-floppy-disk"></i> Enregistrer
           </button>
         </div>
       </form>
-
     </div>
   </div>
 
@@ -185,4 +171,5 @@
 
   <script src="admin.js"></script>
 </body>
+
 </html>
