@@ -214,3 +214,13 @@ document.addEventListener('keydown', (e) => {
 
 fetshcategories();
 fetshlivres();
+
+const container = document.getElementById("genre-container");
+
+document.getElementById("scrollLeft").onclick = () => {
+  container.scrollBy({ left: -150, behavior: "smooth" });
+};
+
+document.getElementById("scrollRight").onclick = () => {
+  container.scrollBy({ left: 150, behavior: "smooth" });
+};

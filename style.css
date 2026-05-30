@@ -684,3 +684,55 @@ nav {
   border-radius: 10px;
 }
 
+/* wrapper */
+.scroll-wrapper {
+  position: relative;
+}
+
+/* container horizontal (cartes même taille) */
+#genre-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+}
+
+/* cacher scrollbar Chrome */
+#genre-container::-webkit-scrollbar {
+  height: 0;
+}
+
+/* boutons à droite (vertical) */
+.scroll-buttons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 10;
+}
+
+/* style boutons */
+.scroll-buttons button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  cursor: pointer;
+  background: #0e0c0a;
+  color: #c9a96e;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.scroll-buttons button:hover {
+  background: #c9a96e;
+  color: #0e0c0a;
+}
+
+.table-cover {
+  width: 60px;    /* ← change selon ta préférence */
+  height: 80px;   /* ← change selon ta préférence */
+  object-fit: cover;
+}

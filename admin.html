@@ -3,161 +3,186 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lire Monde — Admin</title>
+  <title>LireMonde — Admin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <link href="admin.css" rel="stylesheet">
-</head>
-<body>
- 
-  <nav class="admin-nav">
-    <div class="nav-logo">
-      <span class="nav-logo-text">LIRE MONDE — ESPACE TABLEAU DE BORD</span>
-    </div>
-    <ul class="nav-links">
-       <li><a href="index.html">Retour au site</a></li>
-    </ul>
-  </nav>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="style.css">
 
-  <main>
-    <div class="toolbar">
-      <div class="status-badge">
-        Gérez tous les livres de la bibliothèque
+</head>
+
+<body>
+
+   <!-- NAVIGATION -->
+    <nav>
+      <div class="navbar-brand">
+        <a href="index.html" class="logo">
+          <img
+            src="images/Download_free_png_of_PNG_Vintage_book_with_quill__transparent_background_by_Nardsucha_about_open_book_png__quill_pen__feather_pen__open_book__and_quill_15160467-removebg-preview.png"
+            alt
+            class="logo-img"
+          />
+          <span class="logo-text">LIRE MONDE</span>
+        </a>
       </div>
-      <button class="btn btn-gold" onclick="openAddModal()">Ajouter un livre</button>
+
+      <ul class="navbar-menu">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Bibliothèque</a></li>
+        <li><a href="admin.html">admin</a></li>
+        <li><a href="#">Cathégories</a></li>
+      </ul>
+    </nav>
+
+
+  <!-- ===== ADMIN PAGE ===== -->
+  <section class="admin-page">
+
+    <!-- Header -->
+    <div class="admin-header">
+      <div class="header-left">
+        <h1>Gestion des Livres</h1>
+        <p>Gérez tous les livres de la bibliothèque</p>
+      </div>
+      <button id="openAddModal" class="add-book-btn">
+        <i class="fa-solid fa-plus"></i> Ajouter un livre
+      </button>
     </div>
-   
-    <div class="table-wrap">
+
+    <!-- Stats -->
+    <div class="stats-bar">
+      <div class="stat-card">
+        <i class="fa-solid fa-book-open"></i>
+        <div class="stat-info">
+          <span>Total livres</span>
+          <strong id="statTotal">—</strong>
+        </div>
+      </div>
+      <div class="stat-card">
+        <i class="fa-solid fa-bookmark"></i>
+        <div class="stat-info">
+          <span>À lire</span>
+          <strong id="statAlire">—</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search -->
+    <div class="search-row">
+      <div class="search-wrap">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="searchInput" placeholder="Rechercher par titre ou auteur…">
+      </div>
+    </div>
+
+    <!-- Table -->
+    <section class="table-section">
       <table>
         <thead>
           <tr>
-            <th class="center" style="width: 10%;">ID</th>
-            <th class="center" style="width: 20%;">COUVERTURE</th>
-            <th class="left" style="width: 30%;">Title</th>
-            <th class="left" style="width: 25%;">Auteur</th>
-            <th class="center" style="width: 15%;">Actions</th>
+            <th>ID</th>
+            <th>Couverture</th>
+            <th>Titre</th>
+            <th>Auteur</th>
+            <th>Genre</th>
+            <th>À Lire</th>
+            <th>Actions</th>
           </tr>
         </thead>
-        <tbody id="admin-tbody">
-          <tr>
-            <td class="center id-cell">1</td>
-            <td class="center cover-cell">
-              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1546091617i/43380234.jpg" alt="Anna Karenina">
-            </td>
-            <td class="left book-title">Anna Karenina</td>
-            <td class="left book-author">Leo Tolstoy</td>
-            <td class="center">
-              <button class="action-btn-feather" title="Modifier/Action">
-                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e2ccb0'><path d='M21 2c-4 0-8 3-10 7-1.3-.3-2.7-.1-3.8.6L3 13.8l4.3.7L3 19l4.5-4.3.7 4.3 4.2-4.2c.7-1.1.9-2.5.6-3.8 4-2 7-6 7-10h1M11.2 12c-.2 1-.8 1.9-1.6 2.5L8.5 13.4l2.7-1.4m3.5-3.5l-5.4 2.7-1.3-1.3 2.7-5.4c1.6 1.4 2.9 2.7 4 4z'/></svg>" alt="Plume" class="feather-icon">
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td class="center id-cell">2</td>
-            <td class="center cover-cell">
-              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1654190823i/61214041.jpg" alt="White Nights">
-            </td>
-            <td class="left book-title">White Nights</td>
-            <td class="left book-author">Fyofor Dostoyevsky</td>
-            <td class="center">
-              <button class="action-btn-feather">
-                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e2ccb0'><path d='M21 2c-4 0-8 3-10 7-1.3-.3-2.7-.1-3.8.6L3 13.8l4.3.7L3 19l4.5-4.3.7 4.3 4.2-4.2c.7-1.1.9-2.5.6-3.8 4-2 7-6 7-10h1M11.2 12c-.2 1-.8 1.9-1.6 2.5L8.5 13.4l2.7-1.4m3.5-3.5l-5.4 2.7-1.3-1.3 2.7-5.4c1.6 1.4 2.9 2.7 4 4z'/></svg>" alt="Plume" class="feather-icon">
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td class="center id-cell">3</td>
-            <td class="center cover-cell">
-              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1557343311i/10210.jpg" alt="Jane Eyre">
-            </td>
-            <td class="left book-title">Jne Eyre</td>
-            <td class="left book-author">Charlotte Bronte</td>
-            <td class="center">
-              <button class="action-btn-feather">
-                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e2ccb0'><path d='M21 2c-4 0-8 3-10 7-1.3-.3-2.7-.1-3.8.6L3 13.8l4.3.7L3 19l4.5-4.3.7 4.3 4.2-4.2c.7-1.1.9-2.5.6-3.8 4-2 7-6 7-10h1M11.2 12c-.2 1-.8 1.9-1.6 2.5L8.5 13.4l2.7-1.4m3.5-3.5l-5.4 2.7-1.3-1.3 2.7-5.4c1.6 1.4 2.9 2.7 4 4z'/></svg>" alt="Plume" class="feather-icon">
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td class="center id-cell">4</td>
-            <td class="center cover-cell">
-              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1655184852i/61295982.jpg" alt="The Idiot">
-            </td>
-            <td class="left book-title">The Idiot</td>
-            <td class="left book-author">Fyofor Dostoyevsky</td>
-            <td class="center">
-              <button class="action-btn-feather">
-                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e2ccb0'><path d='M21 2c-4 0-8 3-10 7-1.3-.3-2.7-.1-3.8.6L3 13.8l4.3.7L3 19l4.5-4.3.7 4.3 4.2-4.2c.7-1.1.9-2.5.6-3.8 4-2 7-6 7-10h1M11.2 12c-.2 1-.8 1.9-1.6 2.5L8.5 13.4l2.7-1.4m3.5-3.5l-5.4 2.7-1.3-1.3 2.7-5.4c1.6 1.4 2.9 2.7 4 4z'/></svg>" alt="Plume" class="feather-icon">
-              </button>
-            </td>
-          </tr>
-        </tbody>
+        <tbody id="tableBody"></tbody>
       </table>
+    </section>
+
+  </section>
+
+  <!-- ===== MODAL AJOUTER / MODIFIER ===== -->
+  <div id="adminModal" class="admin-modal">
+    <div class="admin-modal-content">
+
+      <div class="modal-header">
+        <h2 id="modalTitle">Ajouter un livre</h2>
+        <button class="modal-close" id="modalCloseX">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <form id="bookForm">
+        <input type="hidden" id="bookId">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="title">Titre</label>
+            <input type="text" id="title" placeholder="Ex : Dracula…" required>
+          </div>
+          <div class="form-group">
+            <label for="author">Auteur</label>
+            <input type="text" id="author" placeholder="Ex : Bram Stoker…" required>
+          </div>
+        </div>
+
+        <label for="genre">Genre</label>
+        <select id="genre" required>
+          <option value="">Sélectionner un genre</option>
+          <option>Fantaisie</option>
+          <option>Drame</option>
+          <option>Classique</option>
+          <option>Science-fiction</option>
+          <option>Comédie</option>
+          <option>Horreur</option>
+          <option>Romance</option>
+          <option>Policier</option>
+        </select>
+
+        <label for="description">Description</label>
+        <textarea id="description" placeholder="Description du livre…" required></textarea>
+
+        <label for="cover">Couverture (URL)</label>
+        <input type="text" id="cover" placeholder="https://example.com/cover.jpg" required>
+        <img id="coverPreview" class="cover-preview" alt="Aperçu">
+
+        <div class="toggle-row">
+          <span>À lire</span>
+          <label class="toggle">
+            <input type="checkbox" id="alireToggle" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="form-buttons">
+          <button type="button" id="cancelBtn" class="cancel-btn">Annuler</button>
+          <button type="submit" id="saveBtn" class="save-btn">
+            <i class="fa-solid fa-floppy-disk"></i> Enregistrer
+          </button>
+        </div>
+      </form>
+
     </div>
-  </main>
- 
-  <footer class="admin-footer">
-    <div class="footer-name">LIRE MONDE</div>
-    <div class="footer-sub">2026 · Admin Mode</div>
+  </div>
+
+  <!-- ===== CONFIRMATION SUPPRESSION ===== -->
+  <div id="confirmOverlay" class="confirm-overlay">
+    <div class="confirm-box">
+      <i class="fa-solid fa-triangle-exclamation"></i>
+      <h3>Supprimer ce livre ?</h3>
+      <p>Cette action est irréversible.</p>
+      <div class="confirm-btns">
+        <button class="confirm-cancel" id="confirmCancel">Annuler</button>
+        <button class="confirm-delete" id="confirmDelete">
+          <i class="fa-solid fa-trash"></i> Supprimer
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TOASTS ===== -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2026 LireMonde — Plateforme de lecture numérique</p>
   </footer>
- 
-  <div class="modal-overlay" id="form-modal">
-    <div class="modal">
-      <h2 id="modal-title">AJOUTER UN LIVRE</h2>
-      <div class="form-row">
-        <div>
-          <label>TITRE</label>
-          <input type="text" id="f-titre" placeholder="Ex: Anna Karénine">
-        </div>
-        <div>
-          <label>AUTEUR</label>
-          <input type="text" id="f-auteur" placeholder="Ex: Léo Tolstoï">
-        </div>
-      </div>
-      <div class="form-row">
-        <div>
-          <label>GENRE</label>
-          <select id="f-genre">
-            <option value="">— Choisir —</option>
-            <option>Roman</option>
-            <option>Classique</option>
-          </select>
-        </div>
-        <div>
-          <label>ANNÉE</label>
-          <input type="number" id="f-annee" placeholder="Ex: 1877">
-        </div>
-      </div>
-      <div class="form-row full">
-        <div>
-          <label>URL COUVERTURE</label>
-          <input type="text" id="f-couverture" placeholder="https://...">
-        </div>
-      </div>
-      <div class="form-row full">
-        <div>
-          <label>DESCRIPTION</label>
-          <textarea id="f-description" rows="3" placeholder="Résumé du livre..."></textarea>
-        </div>
-      </div>
-      <div class="form-actions">
-        <button class="btn btn-ghost" onclick="closeFormModal()">Annuler</button>
-        <button class="btn btn-gold" onclick="saveBook()">Enregistrer</button>
-      </div>
-    </div>
-  </div>
 
-  <div class="modal-overlay" id="confirm-modal">
-    <div class="modal" style="text-align: center;">
-      <h2 style="color: #c0392b;">SUPPRIMER LE LIVRE</h2>
-      <p style="color: #8a7a62; margin: 15px 0;">Êtes-vous sûr de vouloir supprimer définitivement <br><strong id="confirm-book-title" style="color: #e8dcc8;">ce livre</strong> ?</p>
-      <div class="form-actions" style="justify-content: center;">
-        <button class="btn btn-ghost" onclick="closeConfirmModal()">Annuler</button>
-        <button class="btn btn-danger" onclick="confirmDelete()">Supprimer</button>
-      </div>
-    </div>
-  </div>
-
+  <script src="admin.js"></script>
 </body>
 </html>
